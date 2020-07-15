@@ -1,0 +1,317 @@
+// CSS RESET ----------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// VARIABLES ---------------------------------- */
+$mainFont: "Nunito", sans-serif;
+$mainFont-size: 1.5rem;
+
+$primaryClr: rgb(0, 53, 107);
+$backgrndClr: rgb(243, 243, 243);
+$highLight-clr: rgb(166, 255, 220);
+$kenzieGrpsBG: rgb(241, 241, 241);
+$boxShadow: rgb(189, 189, 189);
+
+/* BASE --------------------------------------- */
+
+body {
+  font-family: $mainFont;
+}
+
+h1 {
+  font-size: $mainFont-size;
+  color: $primaryClr;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: $mainFont-size;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  text-align: center;
+  padding: 1.25rem;
+}
+
+a,
+li {
+  display: inline;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0.5em;
+  text-align: center;
+}
+
+hr {
+  margin-left: 2em;
+  margin-right: 2em;
+  color: $primaryClr;
+}
+
+a:visited {
+  color: $primaryClr;
+}
+
+form {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+img {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin: auto;
+}
+
+input {
+  margin: 0.5em;
+}
+
+button {
+  margin: auto;
+}
+
+/* LAYOUT ------------------------------------- */
+
+.navbar__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0;
+  text-decoration: underline;
+  padding: 0.75em 0.75em;
+}
+
+.hero {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  padding: 1.25em 1.25em;
+  align-items: center;
+  // object-fit: contain;
+}
+
+.program__cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 4em;
+}
+
+.program-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.15em;
+}
+
+.meet__kenzie-bio,
+.cta {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  background-color: $backgrndClr;
+  color: $primaryClr;
+  padding-bottom: 3em;
+  margin-bottom: 4em;
+}
+
+.meet__kenzie-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 2em;
+}
+
+.meet__kenzie-groups {
+  padding: 0.25em;
+  background-color: $kenzieGrpsBG;
+  margin: 1.5em;
+}
+
+.students-video {
+  margin-left: 10em;
+  margin-right: 10em;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-header {
+  margin-top: 2em;
+}
+/* BLOCKS ------------------------------------- */
+
+.hero iframe {
+  max-width: 100%;
+  // width: 80%;
+  // height: 80%;
+  margin: auto;
+}
+
+.hero-header {
+  font-size: 2.5rem;
+}
+
+.hero h2 {
+  margin-right: 10em;
+  margin-left: 10em;
+}
+
+.meet__kenzie-header,
+.footer-header {
+  font-size: 1.5rem;
+}
+
+.meet__kenzie-groups:hover {
+  box-shadow: 0 0 4em rgb(189, 189, 189);
+  opacity: 80%;
+}
+
+.video {
+  display: flex;
+  margin-bottom: 4em;
+}
+
+.icon {
+  width: 3em;
+}
+
+.program-card {
+  justify-content: center;
+  align-content: center;
+}
+
+.students-video__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.students-video__text p {
+  text-align: left;
+}
+
+.tour-button,
+.compare-btn {
+  background-color: $primaryClr;
+  border-radius: 0.18em;
+  color: rgb(243, 243, 243);
+  width: 18rem;
+  text-align: center;
+  text-decoration: none;
+  &:hover {
+    opacity: 45%;
+  }
+  &:visited {
+    color: rgb(166, 255, 220);
+  }
+}
+
+.compare-btn {
+  width: 10rem;
+  margin-top: 2em;
+  &:hover {
+    box-shadow: 0 0 2em $boxShadow;
+  }
+}
+
+.story-link {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 4em;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.program__button {
+  background-color: whitesmoke;
+  border: 0.05rem solid rgb(0, 53, 107);
+  color: $primaryClr;
+  margin: 0.5em auto;
+  border-radius: 0.25em;
+  &:hover {
+    opacity: 45%;
+    box-shadow: 0 0 1em $boxShadow;
+  }
+}
+
+.submit-btn {
+  background-color: whitesmoke;
+  border: 0.05rem solid $primaryClr;
+  color: $primaryClr;
+  margin: 0.5em auto;
+  text-decoration: none;
+  padding: 0.5em;
+  border-radius: 0.18em;
+  width: 8em;
+  text-align: center;
+  &:hover {
+    opacity: 65%;
+    box-shadow: 0 0 1em $boxShadow;
+  }
+}
+
+/* DESKTOP ------------------------------------ */
+
+@media (min-width: 550px) {
+  .testimonials__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .meet__kenzie-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .program__cards-wrapper {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .icon {
+    width: 6em;
+  }
+  .students-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+  }
+}
+
+@media (min-width: 900px) {
+  .meet__kenzie-biotext {
+    margin-left: 15em;
+    margin-right: 15em;
+  }
+}

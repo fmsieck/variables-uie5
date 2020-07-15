@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* BASE --------------------------------------- */
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #00356b;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  text-align: center;
+  padding: 1.25rem;
+}
+
+a,
+li {
+  display: inline;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0.5em;
+  text-align: center;
+}
+
+hr {
+  margin-left: 2em;
+  margin-right: 2em;
+  color: #00356b;
+}
+
+a:visited {
+  color: #00356b;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+img {
+  width: 100%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 50%;
+  margin: auto;
+}
+
+input {
+  margin: 0.5em;
+}
+
+button {
+  margin: auto;
+}
+
+/* LAYOUT ------------------------------------- */
+.navbar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+  text-decoration: underline;
+  padding: 0.75em 0.75em;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: left;
+  padding: 1.25em 1.25em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.program__cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4em;
+}
+
+.program-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.15em;
+}
+
+.meet__kenzie-bio,
+.cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f3f3f3;
+  color: #00356b;
+  padding-bottom: 3em;
+  margin-bottom: 4em;
+}
+
+.meet__kenzie-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin-bottom: 2em;
+}
+
+.meet__kenzie-groups {
+  padding: 0.25em;
+  background-color: #f1f1f1;
+  margin: 1.5em;
+}
+
+.students-video {
+  margin-left: 10em;
+  margin-right: 10em;
+  margin-bottom: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer-header {
+  margin-top: 2em;
+}
+
+/* BLOCKS ------------------------------------- */
+.hero iframe {
+  max-width: 100%;
+  margin: auto;
+}
+
+.hero-header {
+  font-size: 2.5rem;
+}
+
+.hero h2 {
+  margin-right: 10em;
+  margin-left: 10em;
+}
+
+.meet__kenzie-header,
+.footer-header {
+  font-size: 1.5rem;
+}
+
+.meet__kenzie-groups:hover {
+  -webkit-box-shadow: 0 0 4em #bdbdbd;
+          box-shadow: 0 0 4em #bdbdbd;
+  opacity: 80%;
+}
+
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 4em;
+}
+
+.icon {
+  width: 3em;
+}
+
+.program-card {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.students-video__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.students-video__text p {
+  text-align: left;
+}
+
+.tour-button,
+.compare-btn {
+  background-color: #00356b;
+  border-radius: 0.18em;
+  color: #f3f3f3;
+  width: 18rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.tour-button:hover,
+.compare-btn:hover {
+  opacity: 45%;
+}
+
+.tour-button:visited,
+.compare-btn:visited {
+  color: #a6ffdc;
+}
+
+.compare-btn {
+  width: 10rem;
+  margin-top: 2em;
+}
+
+.compare-btn:hover {
+  -webkit-box-shadow: 0 0 2em #bdbdbd;
+          box-shadow: 0 0 2em #bdbdbd;
+}
+
+.story-link {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 4em;
+}
+
+.signup-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+.program__button {
+  background-color: whitesmoke;
+  border: 0.05rem solid #00356b;
+  color: #00356b;
+  margin: 0.5em auto;
+  border-radius: 0.25em;
+}
+
+.program__button:hover {
+  opacity: 45%;
+  -webkit-box-shadow: 0 0 1em #bdbdbd;
+          box-shadow: 0 0 1em #bdbdbd;
+}
+
+.submit-btn {
+  background-color: whitesmoke;
+  border: 0.05rem solid #00356b;
+  color: #00356b;
+  margin: 0.5em auto;
+  text-decoration: none;
+  padding: 0.5em;
+  border-radius: 0.18em;
+  width: 8em;
+  text-align: center;
+}
+
+.submit-btn:hover {
+  opacity: 65%;
+  -webkit-box-shadow: 0 0 1em #bdbdbd;
+          box-shadow: 0 0 1em #bdbdbd;
+}
+
+/* DESKTOP ------------------------------------ */
+@media (min-width: 550px) {
+  .testimonials__wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .meet__kenzie-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .program__cards-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .icon {
+    width: 6em;
+  }
+  .students-video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2em;
+  }
+}
+
+@media (min-width: 900px) {
+  .meet__kenzie-biotext {
+    margin-left: 15em;
+    margin-right: 15em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
